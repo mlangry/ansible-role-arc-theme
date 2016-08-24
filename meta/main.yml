@@ -1,0 +1,20 @@
+galaxy_info:
+  author: mlangry
+  description: An ansible role to install arc theme
+  license:
+    - MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Ubuntu
+    versions:
+      - vivid
+      - wily
+      - xenial
+
+  galaxy_tags:
+    - desktop
+    - theme
+
+dependencies: []
