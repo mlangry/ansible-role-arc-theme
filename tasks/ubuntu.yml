@@ -2,16 +2,6 @@
   become: yes
   apt: name=gnome-font-viewer state=latest
 
-- name: Install repository key
-  apt_key: url="http://download.opensuse.org/repositories/home:Horst3180/x{{ ansible_distribution }}_{{ ansible_distribution_version }}/Release.key"
-  become: yes
-
-- name: Add the repository
-  apt_repository:
-    repo="deb http://download.opensuse.org/repositories/home:/Horst3180/x{{ ansible_distribution }}_{{ ansible_distribution_version }}/ /"
-    state=present
-  become: yes
-
 - name: Install arc-theme
   apt: name=arc-theme force=yes update_cache=yes state=latest
   become: yes
